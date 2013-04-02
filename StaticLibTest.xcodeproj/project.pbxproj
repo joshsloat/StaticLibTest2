@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A407C950170B0687007E68AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A407C94F170B0687007E68AC /* Foundation.framework */; };
-		A407C955170B0687007E68AC /* StaticLibTest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A407C954170B0687007E68AC /* StaticLibTest.h */; };
-		A407C957170B0687007E68AC /* StaticLibTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A407C956170B0687007E68AC /* StaticLibTest.m */; };
+		A407C955170B0687007E68AC /* CLStaticLibTest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A407C954170B0687007E68AC /* CLStaticLibTest.h */; };
+		A407C957170B0687007E68AC /* CLStaticLibTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A407C956170B0687007E68AC /* CLStaticLibTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +19,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				A407C955170B0687007E68AC /* StaticLibTest.h in CopyFiles */,
+				A407C955170B0687007E68AC /* CLStaticLibTest.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,8 +29,8 @@
 		A407C94C170B0687007E68AC /* libStaticLibTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLibTest.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A407C94F170B0687007E68AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A407C953170B0687007E68AC /* StaticLibTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticLibTest-Prefix.pch"; sourceTree = "<group>"; };
-		A407C954170B0687007E68AC /* StaticLibTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibTest.h; sourceTree = "<group>"; };
-		A407C956170B0687007E68AC /* StaticLibTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibTest.m; sourceTree = "<group>"; };
+		A407C954170B0687007E68AC /* CLStaticLibTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLStaticLibTest.h; sourceTree = "<group>"; };
+		A407C956170B0687007E68AC /* CLStaticLibTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLStaticLibTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +73,8 @@
 		A407C951170B0687007E68AC /* StaticLibTest */ = {
 			isa = PBXGroup;
 			children = (
-				A407C954170B0687007E68AC /* StaticLibTest.h */,
-				A407C956170B0687007E68AC /* StaticLibTest.m */,
+				A407C954170B0687007E68AC /* CLStaticLibTest.h */,
+				A407C956170B0687007E68AC /* CLStaticLibTest.m */,
 				A407C952170B0687007E68AC /* Supporting Files */,
 			);
 			path = StaticLibTest;
@@ -139,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A407C957170B0687007E68AC /* StaticLibTest.m in Sources */,
+				A407C957170B0687007E68AC /* CLStaticLibTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +207,7 @@
 				GCC_PREFIX_HEADER = "StaticLibTest/StaticLibTest-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -219,6 +220,7 @@
 				GCC_PREFIX_HEADER = "StaticLibTest/StaticLibTest-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

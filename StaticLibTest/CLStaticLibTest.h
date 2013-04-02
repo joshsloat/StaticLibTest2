@@ -1,13 +1,13 @@
 //
-//  StaticLibTest.m
+//  StaticLibTest.h
 //  StaticLibTest
 //
 //  Created by Josh Sloat on 4/2/13.
 //  Copyright (c) 2013 Josh Sloat. All rights reserved.
 //
 
-#import "StaticLibTest.h"
+#import <Foundation/Foundation.h>
 
-@implementation StaticLibTest
+@interface CLStaticLibTest : NSObject
 
 @end
