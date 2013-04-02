@@ -12,7 +12,7 @@
 
 - (void)testMethod
 {
-    NSLog(@"Hello World!");
+    NSLog(@"Hello World 123!");
 }
 
 @end
