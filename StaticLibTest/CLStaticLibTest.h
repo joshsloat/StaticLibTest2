@@ -10,4 +10,6 @@
 
 @interface CLStaticLibTest : NSObject
 
+- (void)testMethod;
+
 @end

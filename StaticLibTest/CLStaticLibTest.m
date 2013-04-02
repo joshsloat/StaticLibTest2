@@ -10,4 +10,9 @@
 
 @implementation CLStaticLibTest
 
+- (void)testMethod
+{
+    NSLog(@"Hello World!");
+}
+
 @end
