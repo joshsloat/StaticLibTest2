@@ -13,6 +13,7 @@
 - (void)testMethod
 {
     NSLog(@"Hello World 123!");
+    NSLog(@"Says the Common feature branch");
 }
 
 @end
